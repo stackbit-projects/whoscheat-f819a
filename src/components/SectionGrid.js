@@ -32,13 +32,7 @@ export default class SectionGrid extends React.Component {
                         </div>
                         )}
                         {_.get(item, 'title', null) && (
-                        <h3 className="grid-item-title line-left">
-                          {_.get(item, 'title_url', null) ? (
-                          <Link href={withPrefix(_.get(item, 'title_url', null))}>{_.get(item, 'title', null)}</Link>
-                          ) : 
-                          _.get(item, 'title', null)
-                          }
-                        </h3>
+                        
                         )}
                         {_.get(item, 'content', null) && (
                         <div className="grid-item-content">
