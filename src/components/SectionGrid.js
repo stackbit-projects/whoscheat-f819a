@@ -31,9 +31,7 @@ export default class SectionGrid extends React.Component {
                           <img src={withPrefix(_.get(item, 'image', null))} alt={_.get(item, 'image_alt', null)} />
                         </div>
                         )}
-                        {_.get(item, 'title', null) && (
-                        
-                        )}
+                        {_.get(item, 'title', null) && ()}
                         {_.get(item, 'content', null) && (
                         <div className="grid-item-content">
                           {markdownify(_.get(item, 'content', null))}
